@@ -7,6 +7,6 @@ The FORT Mobile SDK allows Merchants to securely integrate the payment functions
 
 # Getting Started
 
-In order to start using FORT iOS SDK you need to have an account on the FORT , please click here to follow the installation instructions using the link below.
+In order to start using FORT Android SDK you need to have an account on the FORT , please click here to follow the installation instructions using the link below.
 
 https://docs.payfort.com/docs/mobile-sdk/build/index.html
