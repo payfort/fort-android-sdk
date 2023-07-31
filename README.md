@@ -4,6 +4,65 @@
 
 The FORT Mobile SDK allows Merchants to securely integrate the payment functions. It also allows Merchants to easily accept In-App payments. Instead of the traditional, time-consuming, and complex way of being redirected to the mobile browser to complete the payment, In-App payments can be completed through our FORT Mobile SDK. In turn, this gives the Merchant’s consumers a smooth, pleasing user-experience by using In-App payment functions through the native applications.
 
+##  Before you start the integration
+
+Read through the following steps first to understand how the integration
+process works. This will help you to understand why these steps are
+required and why you need to follow a specific sequence.
+
+**Step 1: Access your test account**
+
+You need to make sure that you have access to a test account with Amazon
+Payment Services. It is a full test environment that allows you to fully
+simulate transactions.
+
+**Step 2: Choose between a standardized or custom payment UI**
+
+The Amazon Payment Services Android SDK provides you with a standard
+payment UI that you can use to quickly integrate in-app payments. The
+standard UI offers limited customizability.
+
+Alternatively, you can choose to build your own payment UI using Amazon
+Payment Services Android SDK building blocks, we describe this in [the
+section on custom-coding a payment processing
+UI](#customizing-the-payment-ui).
+
+**Step 3: Make sure that you are using the correct integration type**
+
+Prior to building the integration, you need to make sure that you are
+selecting and using the proper parameters in the API calls as per the
+required integration type. All the mandatory parameters are mentioned
+under every section in the API document
+
+**Step 4: Install the Amazon Payment Services Android SDK in your development environment**
+
+You need to add the repositories to your build file and add the SDK to
+your build.gradle, also setting the correct Android permissions.
+
+**Step 5: Create a test transaction request**
+
+You need to create a test transaction request. Processing a valid API
+request depends on transaction parameters included, you need to check
+the documentation and read every parameter possible to reduce the errors
+in processing the transaction.
+
+**Step 6: Process a transaction response**
+
+After every payment, Amazon Payment Services returns the transaction
+response on the URL configured in your account under **Technical
+Settings**, **Channel Configuration**.
+
+For more details [check the transaction feedback
+instructions](#amazon-payment-services-android-sdk-transaction-feedback).
+You need to validate the response parameters returned on this URL by
+calculating the signature for the response parameters using the SHA
+response phrase configured in your account under security settings.
+
+**Step 7: Test and Go Live**
+
+You can use our test card numbers to test your integration and simulate
+your test cases. The Amazon Payment Services team may need to test your
+integration before going live to assure your application integration.
 
 ##  Installing the Mobile SDK
 
