@@ -21,7 +21,7 @@ First, you need to add the repository to your build file. Add it in your
 root build.gradle at the end of repositories:
 
 ```
-<pre>
+
 allprojects {
   repositories {
     ...
@@ -30,7 +30,7 @@ allprojects {
 }
 
 
-</pre>
+
 ```
 
 
@@ -39,7 +39,7 @@ allprojects {
 Add the Add fortSDK to your build.gradle dependencies using this code:
 
 ```<div class="center-column"></div> 
-<pre>
+
 apply plugin: 'com.android.application' 
 android { ... } 
 dependencies {
@@ -48,7 +48,7 @@ dependencies {
 }  
 }
 
-</pre>
+
 ```
 
 ### Setting Android OS permissions
@@ -57,11 +57,11 @@ You need to set the following two permission so that the Android mobile
 SDK works properly:
 
 ```<div class="center-column"></div> 
-<pre>
+
 < uses-permission android:name="android.permission.INTERNET" />
 < uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-</pre>
+
 ```
 # Getting Started
 
