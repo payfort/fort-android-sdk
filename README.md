@@ -65,10 +65,9 @@ SDK works properly:
 ```
 # Getting Started
 
-In order to start using FORT Android SDK you need to have an account on the FORT ,  click [here](https://github.com/payfort/fort-android-sdk/wiki)
- to follow the instructions.
+In order to start using FORT Android SDK you need to have an account on the FORT ,  click [here](https://github.com/payfort/fort-android-sdk/wiki) to follow the instructions.
 
- The process to work with APS Android SDK Plugin is:
+The process to work with APS Android SDK Plugin is:
  # Create SDK token
  Android mobile SDK token URLs
 These are the URLs you need to use when you request a mobile SDK token for your Android app:
@@ -88,7 +87,7 @@ curl -H "Content-Type: application/json" -d
 https://sbpaymentservices.payfort.com/FortAPI/paymentApi
 
 ```
-
+For more information refer [SDK Token](https://github.com/payfort/fort-android-sdk/wiki#creating-a-mobile-sdk-token).
 
 # Standard Checkout Implementation
 
@@ -261,7 +260,7 @@ public class PayFortSdkSample extends Activity {
 ```
 
 
-
+For more information about Standard Implementation refer [Standard Checkout Implementation](https://github.com/payfort/fort-android-sdk/wiki#standard-checkout-implementation).
 
 # Custom Checkout Implementation
 Alternatively, you can choose to build your own payment processing UI by custom-coding an in-app payment processing feature. With this mobile SDK feature we allow Amazon Payment Services merchants to integrate and implement a native app checkout experience without displaying a default payment screen.
@@ -434,3 +433,4 @@ PayFortCallback callback = new PayFortCallback() {
     btnPay.setup(environment, fortRequest, payComponents, callback)
 
 ```
+For more information about the custom checkout implementation refer [here](https://github.com/payfort/fort-android-sdk/wiki#customizing-the-payment-ui).
